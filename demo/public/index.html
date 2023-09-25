@@ -3,36 +3,44 @@
 
 <head>
     <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>No.1 page</title>
+    <title>耋不再跌再不迭</title>
     <link rel="stylesheet" href="style_u.css">
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"> </script> -->
 </head>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 
 <body>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
 <button type="button" id="BackTop" class="toTop-arrow"></button>
 <script>
 $(function(){
-	$('#BackTop').click(function(){ 
-		$('html,body').animate({scrollTop:0}, 333);
-	});
-	$(window).scroll(function() {
-		if ( $(this).scrollTop() > 300 ){
-			$('#BackTop').fadeIn(222);
-		} else {
-			$('#BackTop').stop().fadeOut(222);
-		}
-	}).scroll();
+    $('#BackTop').click(function(){ 
+        $('html,body').animate({scrollTop:0}, 333);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300 ){
+            $('#BackTop').fadeIn(222);
+        } else {
+            $('#BackTop').stop().fadeOut(222);
+        }
+    }).scroll();
 });
 </script> -->
 
-    <h1 class="heading">使用者頁面-No.1</h1>
+    <h1 class="heading">耋不再跌再不迭-劉光明</h1>
     <div class="layout-blockcontainer1 container">
         <div class="layout-blockcontainer container">
             <div class="wrapper-three-2">
                 <div>功能選單:</div>
                 <nav class="owl-filter-bar">
-				
+                
                     <button class="button-5" onclick="showperinfo()">個人資料</button>
                     <script>
                         function showperinfo(){
@@ -43,8 +51,8 @@ $(function(){
                     <button class="button-5" onclick="showdialog()">社工資料</button>
                     <dialog id="this-dialog">
                         <p><b><h1>社工資料:</h1></b></p>
-                        <b>名稱:</b>XXX <br>
-                        <b>連絡電話:</b>0000-000-000<br>
+                        <b>名稱:</b>鄧健康 <br>
+                        <b>連絡電話:</b>0800-000-000<br>
                         <b>服務機構電話:</b>(00)0000-0000<br><br>
                         <b>服務時間:</b><br>
                          星期一 ~ 星期五 9:00 - 17:00<br>
@@ -66,28 +74,28 @@ $(function(){
                     <dialog id="f-dialog">
                         <p><b><h1>緊急聯絡人資料:</h1></b></p>
                         緊急連絡人1:<br>
-                        <b>名稱:</b>XXX <br>
-                        <b>連絡電話:</b>0000-000-000<br>
-                        <b>關係:</b><br><br>
+                        <b>名稱:</b>蘇雅琳 <br>
+                        <b>連絡電話:</b>0000-010-000<br>
+                        <b>關係:</b>孫媳婦<br><br>
     
                         緊急聯絡人2:<br>
-                        <b>名稱:</b>XXX <br>
-                        <b>連絡電話:</b>0000-000-000<br>
-                        <b>關係:</b><br><br>
+                        <b>名稱:</b>劉忠義 <br>
+                        <b>連絡電話:</b>0000-000-010<br>
+                        <b>關係:</b>兒子<br><br>
     
                          <br>
-                        <button onclick="closedialog()">關閉</button>
+                        <button onclick="closedialog1()">關閉</button>
                     
                         </dialog>
                     <script>
                         function showdialog1(){
                             var dialog = document.getElementById('f-dialog').showModal();
                         }
-                        function closedialog(){
+                        function closedialog1(){
                             document.getElementById('f-dialog').close();
                         }
                     </script>
-                    <button class="button-5" id="text">給社工的話</button>
+                    <button class="button-5" id="text">連繫社工</button>
                     <script>
                         const text = document.getElementById('text');
                         text.addEventListener('click',popout);
@@ -114,8 +122,9 @@ $(function(){
                                 alert('已取消!');
                             }
                         });
+                        
                         // btn.addEventListener('click',function alert(){
-                        // 	btn.textContent = '取消求救';
+                        //  btn.textContent = '取消求救';
                         // });
                         // function alert(){
                             
@@ -134,44 +143,57 @@ $(function(){
                         <div id="w-node-401-339" class="layout-cell cell">
                             <div><strong> 攝影機選擇:</strong></div>
 
-                            <button class="button-6" onclick="video1()"><img src="camera.png" width="6%"
-                                    height="6%">攝影機1</button>
+                            <button class="button-9" onclick="showcam()"><u>攝影機位置</u></button>
+                            <dialog id="cam_position">
+                            <p><b><h1>攝影機擺放位置:</h1></b></p>
+                            <div>
+                                <img src="cam_position.jpg" style="max-height: 250px; max-width: 750px;">
+                            </div>                  
+                            <button onclick="closedialog()">關閉</button>
+                    
+                        </dialog>
                             <script>
-                                function video1() {
-
+                                function showcam(){
+                                    var dia_cam = document.getElementById('cam_position').showModal();
+                                }
+                                function closedialog(){
+                                    document.getElementById('cam_position').close();
                                 }
                             </script>
-
-                            <button class="button-7" onclick="video2()"><img src="camera.png" width="6%"
-                                    height="6%">攝影機2</button>
+                            <button class="button-6" onclick="video1()"><img src="camera.png" width="6%" height="6%">攝影機1</button>
                             <script>
-                                function video2() {
-
+                                function video1(){
+                                    
                                 }
                             </script>
-
-                            <button class="button-8" onclick="video3()"><img src="camera.png" width="6%"
-                                    height="6%">攝影機3</button>
+    
+                            <button class="button-7" onclick="video2()"><img src="camera.png" width="6%" height="6%">攝影機2</button>
                             <script>
-                                function video3() { }
+                                function video2(){
+    
+                                }
                             </script>
-
-                            <button class="button-8" onclick="video4()"><img src="camera.png" width="6%"
-                                    height="6%">攝影機4</button>
+    
+                            <!-- <button class="button-8" onclick="video3()"><img src="camera.png" width="6%" height="6%">攝影機3</button>
                             <script>
-                                function video4() { }
-                            </script>
+                                function video3(){}
+                            </script> -->
+    
+                            <!-- <button class="button-8" onclick="video4()"><img src="camera.png" width="6%" height="6%">攝影機4</button>
+                            <script>
+                                function video4(){}
+                            </script> -->
                         </div>
                         <div id="w-node-401-33c" class="layout-cell">
-                            <div style="padding-top: 56.17% " class="video w-video w-embed">
-                                <iframe class="embedly-embed"
-                                    src="https://www.youtube.com/watch?v=t7Q0aF-KLfk&list=LL&index=1" scrolling="no"
-                                    allowfullscreen="" title="video"></iframe>
+                            <div style="padding-top: 56.17% "class="video w-video w-embed">
+                                <!-- <video controls autoplay></video> -->
+                                    <iframe class="embedly-embed" src="test_vo.mp4" type="video/mp4" frameborder="0" scrolling="" allow="autoplay;fullscreen" allowfullscreen autoplay muted></iframe>
                                 <!-- <video><source src="video.mp4" type="video/mp4"></video> -->
                             </div>
                         </div>
                         <div id="w-node-401-33e" class="layout-cell cell">
                             <div><strong> time / probability</strong></div>
+
                         </div>
                     </div>
                 </div>
@@ -179,18 +201,49 @@ $(function(){
         </div>
         <div class="layout-blockcontainer container">
             <div>
-                <div class="text-block-5">圖表<br></div>
+                <div class="text-block-5">圖表與檔案<br></div>
                 <div>
                     <div id="w-node-91-280" class="layout-layout quick-stack-2 layout-layout">
                         <div id="w-node-91-281" class="layout-cell cell-3"><img src="" loading="lazy" alt="">
-                            <div class="text-block-2">圖表1</div>
-                        </div>
+                            <div class="text-block-2">圖表1-coming soon</div>
+                        <!-- <div><canvas id="myChart" style="width:100;max-width:300px"></canvas></div> -->
+                        <div><canvas id="myChart" width="400" height="200"></canvas></div>
+                        <script>
+                            var ctx = document.getElementById('myChart').getContext('2d');
+
+                            // Define your chart data and options
+                            var chartData = {
+                                labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri'],
+                                datasets: [{
+                                    label: 'label',
+                                    data: [10, 15, 7, 12, 18],
+                                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                    borderColor: 'rgba(75, 192, 192, 1)',
+                                    borderWidth: 1
+                                }]
+                            };
+                        
+                            var chartOptions = {
+                                responsive: true,
+                                maintainAspectRatio: false
+                            };
+                        
+                            // Create the chart
+                            var myChart = new Chart(ctx, {
+                                type: 'line',
+                                data: chartData,
+                                options: chartOptions
+                            });                      
+                            
+                        </script>
+
+                    </div>
                         <div id="w-node-91-285" class="layout-cell cell-4"><img src="" loading="lazy" alt="">
                             <div class="text-block-3">圖表2</div>
                         </div>
-                        <div id="w-node-91-289" class="layout-cell cell-5"><img src="" loading="lazy" alt="">
+                        <!-- <div id="w-node-91-289" class="layout-cell cell-5"><img src="" loading="lazy" alt="">
                             <div class="text-block-4">圖表3</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
