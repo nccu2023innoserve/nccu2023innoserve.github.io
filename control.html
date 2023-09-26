@@ -19,98 +19,60 @@
 				<a href="#" class="button-5">No.2-許美玲</a>
 				<a href="#" class="button-5">No.3-鄧健民</a>
 				<a href="#" class="button-5">No.4-蔡春燕</a>
-			<!-- 	<a href="#" class="button-5">No.5-XXX</a>
-				<a href="#" class="button-5">No.6-XXX</a>
-				<a href="#" class="button-5">No.7-XXX</a>
-				<a href="#" class="button-5">No.8-XXX</a>
-				<a href="#" class="button-5">No.9-XXX</a> -->
-			</nav>
-			<!-- <a href="#" class="button-5">Button Text1</a>
-			<a href="#" class="button-5">Button Text2</a>
-			<a href="#" class="button-5">Button Text3</a>
-			<a href="#" class="button-5">Button Text4</a>
-			<a href="#" class="button-5">Button Text5</a> -->
 		</div>
 	</div>
-<!-- 	<div class="layout-blockcontainer">
-		<div>
-			<div class="text-block">識別結果</div>
-			<div>
-				<div id="w-node-401-338" class="layout-layout quick-stack layout-layout">
-					<div id="w-node-401-339" class="layout-cell cell">
-						<div><strong> 攝影機選擇:</strong></div>
 
-						<button class="button-6" onclick="video1()"><img src="camera.png" width="6%" height="6%">攝影機1</button>
-						<script>
-							function video1(){
-
-							}
-						</script>
-
-						<button class="button-7" onclick="video2()"><img src="camera.png" width="6%" height="6%">攝影機2</button>
-						<script>
-							function video2(){
-
-							}
-						</script>
-
-						<button class="button-8" onclick="video3()"><img src="camera.png" width="6%" height="6%">攝影機3</button>
-						<script>
-							function video3(){}
-						</script>
-
-						<button class="button-8" onclick="video4()"><img src="camera.png" width="6%" height="6%">攝影機4</button>
-						<script>
-							function video4(){}
-						</script>
-					</div>
-					<div id="w-node-401-33c" class="layout-cell">
-						<div style="padding-top: 56.17% "class="video w-video w-embed">
-							<iframe class="embedly-embed" src="https://www.youtube.com/watch?v=t7Q0aF-KLfk&list=LL&index=1" scrolling="no" allowfullscreen="" title="video"></iframe>
-							<!-- <video><source src="video.mp4" type="video/mp4"></video> -->
-						<!-- </div>
-					</div>
-					<div id="w-node-401-33e" class="layout-cell cell">
-						<div><strong> time / probability</strong></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> --> -->
 	<div class="layout-blockcontainer container">
 		<div>
 			<div class="text-block-5">長者即時影像<br></div>
 			<div>
 				<div id="w-node-91-280" class="layout-layout quick-stack-2 layout-layout">
-					<div id="w-node-91-281" class="layout-cell cell-3"><img src="" loading="lazy" alt="">
-						<div class="text-block-2">
-							<button onclick="switch1()">No.1-劉光明</button></div>
+					<div id="w-node-91-289" class="layout-cell cell-3"><img src="" loading="lazy" alt="">
+							
+						<button class="button11" onclick="switch1()">No.1-劉光明
+							<video width="400" height="300"controls autoplay loop muted>
+							<source src="test_vo.mp4" type="video/mp4" allowfullscreen="True">
+							</video></button>
 							<script>
 								function switch1(){
+									 window.location.href ="No.1.html"
+									 
+									  	alert('請盡速聯絡年長者，並確認年長者當前狀況!');
+								}
+							</script>
+					</div>
+					<div id="w-node-91-289" class="layout-cell cell-4"><img src="" loading="lazy" alt="">
+						<button class="button11" onclick="switch2()">
+							No.2-許美玲<video controls autoplay loop muted>
+							<source src="test_vo.mp4" type="video/mp4" allowfullscreen="True">
+							</video></button>
+							<script>
+								function switch2(){
 
 								}
 							</script>
-						<video width="400" height="300"controls autoplay muted>
-							<source src="test_vo.mp4" type="video/mp4" allowfullscreen="True">
-							</video>
-					</div>
-					<div id="w-node-91-285" class="layout-cell cell-4"><img src="" loading="lazy" alt="">
-						<div class="text-block-3"><button>No.2-許美玲</button></div>
-						<video controls autoplay muted>
-							<source src="test_vo.mp4" type="video/mp4" allowfullscreen="True">
-							</video>
 					</div>
 					<div id="w-node-91-289" class="layout-cell cell-5"><img src="" loading="lazy" alt="">
-						<div class="text-block-4"><button>No.3-鄧健民</button></div>
-						<video controls autoplay muted>
+						<button class="button11" onclick="switch3()">No.3-鄧健民
+							<video controls autoplay loop muted>
 							<source src="test_vo.mp4" type="video/mp4" allowfullscreen="True">
-							</video>
+							</video></button>
+							<script>
+								function switch3(){
+
+								}
+							</script>
 					</div>
 					<div id="w-node-91-289" class="layout-cell cell-5"><img src="" loading="lazy" alt="">
-						<div class="text-block-4"><button>No.4-蔡春燕</button></div>
-						<video controls autoplay muted>
+						<button class="button11" onclick="switch4()">No.4-蔡春燕
+						<video controls autoplay loop muted>
 							<source src="test_vo.mp4" type="video/mp4" allowfullscreen="True">
-							</video>
+							</video></button>
+							<script>
+								function switch4(){
+
+								}
+							</script>
 					</div>
 				</div>
 			</div>
