@@ -1,5 +1,5 @@
 body{
-	background-image: url("bg.jpg");
+    background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -243,7 +243,7 @@ body{
 #w-node-91-280{
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
@@ -252,4 +252,9 @@ body{
 #w-node-91-289{
     grid-row: span 1;
     grid-column: span 1;
+/*    height: 30vh;*/
+    height: auto;
+    width: auto;
+/*    background-color: #000;
+    color: "white";*/
 }
