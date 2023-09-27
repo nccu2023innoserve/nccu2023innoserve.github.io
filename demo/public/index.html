@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-
+    
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
@@ -15,7 +15,7 @@
     integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
     crossorigin="anonymous"
     ></script>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>耋不再跌再不迭</title>
     <link rel="stylesheet" href="style_u.css">
@@ -27,6 +27,7 @@
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 
 <body class="mdui-theme-layout-dark mdui-theme-accent-white">
+    <div class="mdui-container-fluid">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
@@ -46,23 +47,28 @@ $(function(){
     }).scroll();
 });
 </script> -->
+<!-- <script>
+        window.onload = function () {
+            alert('This is an alert on Page 2.');
+        };
+    </script> -->
 
-    <!---<h1 class="heading">耋不再跌再不迭-劉光明</h1>--->
+    <!-- <h1 class="heading">耋不再跌再不迭-劉光明</h1> -->
     <div class="layout-blockcontainer1 container">
-        <div class="mdui-appbar">
+                    <div class="mdui-appbar">
             <div class="mdui-tab mdui-color-theme">
-                <!---<div>功能選單:</div>--->
-                <a href="javascript:;" class="mdui-typo-headline">CareResponse</a>
-                <a href="javascript:;" class="mdui-typo-title"><i class="mdui-icon material-icons">&#xe853;</i>劉光明</a>
+                <a href="javascript:;" class="mdui-typo-headline">CareResponse guardian</a>
+                <a href="elderly/No.1-XXX.html" class="mdui-typo-title"><i class="mdui-icon material-icons">&#xe853;</i>劉光明</a>
                 <div class="mdui-toolbar-spacer"></div>
 
+                <div style="margin-left: 0.5em; margin-right: 0.5em;">
                 <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" onclick="showperinfo()">個人資料</button>
                     <script>
                         function showperinfo(){
                             window.location.href ="elderly/No.1-XXX.html"
                         }
                     </script>
-    
+
                     <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" onclick="showdialog()">社工資料</button>
                     <dialog id="this-dialog">
                         <p><b><h1>社工資料:</h1></b></p>
@@ -75,7 +81,7 @@ $(function(){
                          星期日 休假<br>
                          <br>
                         <button onclick="closedia()">關閉</button>
-                    
+
                         </dialog>
                     <script>
                         function showdialog(){
@@ -92,15 +98,15 @@ $(function(){
                         <b>名稱:</b>蘇雅琳 <br>
                         <b>連絡電話:</b>0000-010-000<br>
                         <b>關係:</b>孫媳婦<br><br>
-    
+
                         緊急聯絡人2:<br>
                         <b>名稱:</b>劉忠義 <br>
                         <b>連絡電話:</b>0000-000-010<br>
                         <b>關係:</b>兒子<br><br>
-    
+
                          <br>
                         <button onclick="closedialog1()">關閉</button>
-                    
+
                         </dialog>
                     <script>
                         function showdialog1(){
@@ -123,7 +129,7 @@ $(function(){
                             }
                         }
                     </script>
-    
+
                     <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-dense mdui-color-pink-a200" id="btn">緊急求救</button>
                     <script>
                         const btn = document.getElementById('btn');
@@ -137,119 +143,33 @@ $(function(){
                                 alert('已取消!');
                             }
                         });
-                        
-                        // btn.addEventListener('click',function alert(){
-                        //  btn.textContent = '取消求救';
-                        // });
-                        // function alert(){
-                            
-                        // }
-                    </script>
-                <!---<nav class="owl-filter-bar">
-                
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" onclick="showperinfo()">個人資料</button>
-                    <script>
-                        function showperinfo(){
-                            window.location.href ="elderly/No.1-XXX.html"
-                        }
-                    </script>
-    
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" onclick="showdialog()">社工資料</button>
-                    <dialog id="this-dialog">
-                        <p><b><h1>社工資料:</h1></b></p>
-                        <b>名稱:</b>鄧健康 <br>
-                        <b>連絡電話:</b>0800-000-000<br>
-                        <b>服務機構電話:</b>(00)0000-0000<br><br>
-                        <b>服務時間:</b><br>
-                         星期一 ~ 星期五 9:00 - 17:00<br>
-                         星期六 9:00 - 12:00<br>
-                         星期日 休假<br>
-                         <br>
-                        <button onclick="closedia()">關閉</button>
-                    
-                        </dialog>
-                    <script>
-                        function showdialog(){
-                            var dia = document.getElementById('this-dialog').showModal();
-                        }
-                        function closedia(){
-                                document.getElementById('this-dialog').close();
-                        }
-                    </script>
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" onclick="showdialog1()">緊急連絡人資訊</button>
-                    <dialog id="f-dialog">
-                        <p><b><h1>緊急聯絡人資料:</h1></b></p>
-                        緊急連絡人1:<br>
-                        <b>名稱:</b>蘇雅琳 <br>
-                        <b>連絡電話:</b>0000-010-000<br>
-                        <b>關係:</b>孫媳婦<br><br>
-    
-                        緊急聯絡人2:<br>
-                        <b>名稱:</b>劉忠義 <br>
-                        <b>連絡電話:</b>0000-000-010<br>
-                        <b>關係:</b>兒子<br><br>
-    
-                         <br>
-                        <button onclick="closedialog1()">關閉</button>
-                    
-                        </dialog>
-                    <script>
-                        function showdialog1(){
-                            var dialog = document.getElementById('f-dialog').showModal();
-                        }
-                        function closedialog1(){
-                            document.getElementById('f-dialog').close();
-                        }
-                    </script>
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" id="text">連繫社工</button>
-                    <script>
-                        const text = document.getElementById('text');
-                        text.addEventListener('click',popout);
-                        function popout(e){
-                            var enter = window.prompt('請輸入');
-                            if(enter == null || ""){
-                                text = "";
-                            } else{
-                                text = enter;
-                            }
-                        }
-                    </script>
-    
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent mdui-color-pink-a200" id="btn">緊急求救</button>
-                    <script>
-                        const btn = document.getElementById('btn');
-                        btn.addEventListener('click', function handleClick() {
-                            const initialText = '緊急求救';
-                            if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
-                                btn.textContent = '取消求救';
-                                alert('將開始錄影!\n若為誤觸，請再次點擊以取消!');
-                            } else {
-                                btn.textContent = initialText;
-                                alert('已取消!');
-                            }
-                        });
-                        
-                        // btn.addEventListener('click',function alert(){
-                        //  btn.textContent = '取消求救';
-                        // });
-                        // function alert(){
-                            
-                        // }
-                    </script>
-                    
-                </nav>--->
 
-            </div>
+                        // btn.addEventListener('click',function alert(){
+                        //  btn.textContent = '取消求救';
+                        // });
+                        // function alert(){
+
+                        // }
+                    </script>
+                    
+                </nav>
+
+            </div></div>
         </div>
-        <div class="layout-blockcontainer">
-            <div>
-                <div class="text-block">識別結果</div>
-                <div>
-                    <div id="w-node-401-338" class="layout-layout quick-stack layout-layout">
-                        <div id="w-node-401-339" class="layout-cell cell">
-                            <div><strong> 攝影機選擇:</strong></div>
 
-                            <button class="button-9" onclick="showcam()"><u>攝影機位置</u></button>
+        <!-- <div class="layout-blockcontainer"> -->
+            <div class="mdui-row-xs-3 mdui-row-sm-4 mdui-row-md-5 mdui-row-lg-6 mdui-row-xl-7 mdui-grid-list" >
+
+                <div class="text-block">識別結果</div>
+                    <div id="mdui-grid w-node-401-338 mdui-col" class="layout-layout quick-stack layout-layout">
+                        <div id="w-node-401-339" class="layout-cell cell" style="border: none;">
+                            <div class="mdui-color-grey-700 " style="border-radius: 2px 2px 2px 2px; border:3px double #F5F5F5; height: auto;">
+                            <div><strong>攝影機選擇: </strong>
+                            
+                            <!-- <button class="button-9" onclick="showcam()" style="margin-bottom: 0.25em;margin-top: 0.25em; padding: auto;"> -->
+                                <button class="mdui-btn mdui-btn-raised mdui-color-grey-300 mdui-btn-dense" onclick="showcam()" style="margin-bottom: 0.25em;margin-top: 0.25em; padding: auto;">
+                                    <u>攝影機位置</u></button>
+                                    </div>
                             <dialog id="cam_position">
                             <p><b><h1>攝影機擺放位置:</h1></b></p>
                             <div>
@@ -266,67 +186,74 @@ $(function(){
                                     document.getElementById('cam_position').close();
                                 }
                             </script>
-                            <button class="button-6" onclick="video1()"><img src="camera.png" width="6%" height="6%">攝影機1</button>
+                            <button class="button-6 mdui-color-indigo-50" onclick="video1()"><img src="camera.png" width="6%" height="6%">攝影機1</button>
                             <script>
                                 function video1(){
-                                    
-                                }
+                                    window.location.href ="No.1.html"
+                        }
                             </script>
     
-                            <button class="button-7" onclick="video2()"><img src="camera.png" width="6%" height="6%">攝影機2</button>
+                            <button class="button-7 mdui-color-indigo-50" onclick="video2()"><img src="camera.png" width="6%" height="6%">攝影機2</button>
                             <script>
                                 function video2(){
-    
+                                    window.location.href ="No.1_2.html"
                                 }
                             </script>
     
-                            <!-- <button class="button-8" onclick="video3()"><img src="camera.png" width="6%" height="6%">攝影機3</button>
+                            <button class="button-8 mdui-color-indigo-50" onclick="video3()"><img src="camera.png" width="6%" height="6%">攝影機3</button>
                             <script>
-                                function video3(){}
-                            </script> -->
-    
-                            <!-- <button class="button-8" onclick="video4()"><img src="camera.png" width="6%" height="6%">攝影機4</button>
-                            <script>
-                                function video4(){}
-                            </script> -->
-                        </div>
-                        <div id="w-node-401-33c" class="layout-cell">
-                            <!-- <div style="padding-top: 56.17% "class="video w-video w-embed"> -->
-                                <!-- <video controls autoplay></video> -->
-                                <video controls height="
-                                100%" width="100%" autoplay loop muted>
-                                    <source src="test_vo.mp4" type="video/mp4" allowfullscreen="True">
-                                    </video>
-                                    <!-- <iframe class="embedly-embed" src="test_vo.mp4" type="video/mp4" frameborder="0" scrolling="" allow="autoplay;fullscreen" allowfullscreen autoplay muted></iframe> -->
-                                <!-- <video><source src="video.mp4" type="video/mp4"></video> -->
-                            <!-- </div> -->
-                        </div>
-                        <div id="w-node-401-33e" class="layout-cell cell">
-                            <div><strong> time / probability</strong></div>
-
+                                function video3(){
+                                    window.location.href ="No.1_3.html"
+                                }
+                            </script>
+                            <!-- <div class="mdui-divider-inset-dark"></div> -->
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="layout-blockcontainer container">
+
+                        <div id="w-node-401-33c" class="layout-cell">
+                                <video controls height="
+                                100%" width="100%" autoplay loop muted>
+                                    <source src="fall1_silent_out.mp4" type="video/mp4" allowfullscreen="True">
+                                    </video>
+                        </div>
+
+                        <div id="w-node-401-33e" class="mdui-grid layout-cell cell" style="border: none;">
+
+                            <div class="mdui-color-grey-700" style="border-radius: 2px 2px 2px 2px;border:3px double #F5F5F5;">
+                            <div><strong> 系統日誌
+                            </strong><button class="mdui-btn mdui-color-blue-grey"style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
+                            <b>2023-09-21_09:21 _Fall_Warning_</b></button>
+                            <button class="mdui-btn mdui-color-blue-grey" style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
+                            <b>2023-09-08_11:44 _Fall_Warning_</b></button>
+                            <button class="mdui-btn mdui-color-blue-grey" style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
+                            <b>2023-09-02_14:44 _Fall_Warning_</b></button>
+                            <button class="mdui-btn mdui-color-blue-grey" style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
+                            <b>2023-08-26_18:28 _Fall_Warning_</b></button>
+                        </div>
+</div>
+
+                        </div>
+                    </div></div>
+             
+            <!-- <div class="layout-blockcontainer container"> -->
             <div>
-                <div class="text-block-5">圖表與檔案<br></div>
+                <div class="text-block-5">圖表<br></div>
                 <div>
                     <div id="w-node-91-280" class="layout-layout quick-stack-2 layout-layout">
-                        <div id="w-node-91-281" class="layout-cell cell-3"><img src="" loading="lazy" alt="">
-                            <div class="text-block-2">圖表1-coming soon</div>
-                        <!-- <div><canvas id="myChart" style="width:100;max-width:300px"></canvas></div> -->
+                        <div id="w-node-91-281" class="layout-cell cell-3" style="background-color: aliceblue;">
+                            <div class="text-block-2">跌倒風險</div>
                         <div><canvas id="myChart" width="400" height="200"></canvas></div>
                         <script>
                             var ctx = document.getElementById('myChart').getContext('2d');
 
-                            // Define your chart data and options
                             var chartData = {
-                                labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri'],
+                                labels: ['08', '10', '12', '14', '16','18','20','22'],
                                 datasets: [{
-                                    label: 'label',
-                                    data: [10, 15, 7, 12, 18],
+                                    label: '跌倒風險(%)',
+                                    data: [82,27 ,95,64, 57,
+                                        63,
+                                        79,
+                                        24],
                                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
                                     borderColor: 'rgba(75, 192, 192, 1)',
                                     borderWidth: 1
@@ -343,17 +270,78 @@ $(function(){
                                 type: 'line',
                                 data: chartData,
                                 options: chartOptions
-                            });                      
-                            
+                            });     
                         </script>
 
                     </div>
-                        <div id="w-node-91-285" class="layout-cell cell-4"><img src="" loading="lazy" alt="">
-                            <div class="text-block-3">圖表2</div>
+                        <div id="w-node-91-285" class="layout-cell cell-4" style="background-color: aliceblue;">
+                            <div class="text-block-3">跌倒累積次數(週)</div>
+                            <div><canvas id="myChart_times" width="400" height="200"></canvas></div>
+                          <script>
+                            var ctx1 = document.getElementById('myChart_times').getContext('2d');
+
+                            var chartData1 = {
+                                labels: ['一', '二', '三', '四', '五', '六', '日'],
+                                datasets: [{
+                                    label: '累計次數',
+                                    data: [1, 2, 4, 5, 5, 5, 6],
+                                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                    borderColor: 'rgba(75, 192, 192, 1)',
+                                    borderWidth: 1
+                                }]
+                            };
+
+                            var chartOptions1 = {
+                                responsive: true,
+                                maintainAspectRatio: false
+                            };
+
+                            // Create the chart with corrected data and options
+                            var myChart_times = new Chart(ctx1, {
+                                type: 'bar',
+                                data: chartData1, // Corrected variable name
+                                options: chartOptions1, // Corrected variable name
+                            });
+    </script>
+
+<div class="mdui-container">
+   <div class="mdui-fab-wrapper" id="fab" mdui-fab="{trigger: 'hover'}">
+      <button class="mdui-fab mdui-ripple mdui-color-pink-accent">
+        <i class="mdui-icon material-icons">&#xe853;</i>
+       <i class="mdui-icon mdui-fab-opened material-icons">&#xe7ff;</i>
+      </button>
+
+  <div class="mdui-fab-dial">
+    <!-- 緊急求救 -->
+     <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red">
+      <i class="mdui-icon material-icons">&#xe887;</i>   </button>
+      <!-- 聯絡社工 -->
+    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink">
+      <i class="mdui-icon material-icons">&#xe61c;</i>
+    </button>
+    <!-- 緊急聯絡人資料 -->
+    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red">
+      <i class="mdui-icon material-icons">&#xe7fb;</i>
+    </button>
+    <!-- 社工資料 -->
+    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange">
+      <i class="mdui-icon material-icons">&#xe55a;</i>
+    </button>
+    <!-- 個人資料 -->
+    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue">
+      <i class="mdui-icon material-icons">&#xe853;</i>    </button>
+  </div>
+</div>
+<script>
+       <div class="mdui-fab-wrapper" id="fab">
+      <button class="mdui-fab mdui-ripple mdui-color-pink-accent">
+        <i class="mdui-icon material-icons">add</i>
+        <i class="mdui-icon mdui-fab-opened material-icons">mode_edit</i>
+      </button>
+</script>
+
+                            <!-- <button id="record" class="button-9"></button> -->
                         </div>
-                        <!-- <div id="w-node-91-289" class="layout-cell cell-5"><img src="" loading="lazy" alt="">
-                            <div class="text-block-4">圖表3</div>
-                        </div> -->
                     </div>
                 </div>
             </div>
