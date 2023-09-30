@@ -1,154 +1,119 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>No.1-XXX</title>
-	<link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
-    integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
-    crossorigin="anonymous"
-    />
-    <script
-    src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
-    integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
-    crossorigin="anonymous"
-    ></script>
-	<!-- <link rel ="stylesheet" href = "style_user.css"> -->
-<!-- 	<style>
-		body{
-	    background-image: url("bg.jpg");
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    position: relative;
-	    display: block;
-	    /*font: 12px/1 "Microsoft YaHei", Tahoma, Helvetica, Arial, SimSun, sans-serif;*/
-	}
-	.table{
-		text-align: center;
-		position: relative;
-		font-family: Great Vibes, cursive;
-/*		width: auto;*/
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 2em;
-		width: 70vw;
-
-	}
-	.disease{
-		overflow-y: auto;
-		overflow-x: auto;
-	}
-	</style> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+		integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+		integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+		crossorigin="anonymous"></script>
 </head>
+
 <body class="mdui-color-blue-grey">
 	<div class="mdui-appbar mdui-color-blue-grey">
-            <div class="mdui-tab mdui-color-theme" >
-                <!---<div>功能選單:</div>--->
-                <a href="javascript:;" class="mdui-typo-headline">個人資料</a>
-                <a href="javascript:;" class="mdui-typo-title"><i class="mdui-icon material-icons">&#xe853;</i>劉光明</a>
-                <div class="mdui-toolbar-spacer"></div>
-                <div style="margin-left: 0.5em;  margin-right: 0.5em;">
-                <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" onclick="showperinfo()">回首頁</button>
-                    <script>
-                        function showperinfo(){
-                            window.location.href ="../control.html"
-                        }
-                    </script>
-    
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" onclick="showdialog()">社工資料</button>
-                    <dialog id="this-dialog">
-                        <p><b><h1>社工資料:</h1></b></p>
-                        <b>名稱:</b>鄧健康 <br>
-                        <b>連絡電話:</b>0800-000-000<br>
-                        <b>服務機構電話:</b>(00)0000-0000<br><br>
-                        <b>服務時間:</b><br>
-                         星期一 ~ 星期五 9:00 - 17:00<br>
-                         星期六 9:00 - 12:00<br>
-                         星期日 休假<br>
-                         <br>
-                        <button onclick="closedia()">關閉</button>
-                    
-                        </dialog>
-                    <script>
-                        function showdialog(){
-                            var dia = document.getElementById('this-dialog').showModal();
-                        }
-                        function closedia(){
-                                document.getElementById('this-dialog').close();
-                        }
-                    </script>
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" onclick="showdialog1()">緊急連絡人資訊</button>
-                    <dialog id="f-dialog">
-                        <p><b><h1>緊急聯絡人資料:</h1></b></p>
-                        緊急連絡人1:<br>
-                        <b>名稱:</b>蘇雅琳 <br>
-                        <b>連絡電話:</b>0000-010-000<br>
-                        <b>關係:</b>孫媳婦<br><br>
-    
-                        緊急聯絡人2:<br>
-                        <b>名稱:</b>劉忠義 <br>
-                        <b>連絡電話:</b>0000-000-010<br>
-                        <b>關係:</b>兒子<br><br>
-    
-                         <br>
-                        <button onclick="closedialog1()">關閉</button>
-                    
-                        </dialog>
-                    <script>
-                        function showdialog1(){
-                            var dialog = document.getElementById('f-dialog').showModal();
-                        }
-                        function closedialog1(){
-                            document.getElementById('f-dialog').close();
-                        }
-                    </script>
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" id="text">連繫社工</button>
-                    <script>
-                        const text = document.getElementById('text');
-                        text.addEventListener('click',popout);
-                        function popout(e){
-                            var enter = window.prompt('請輸入');
-                            if(enter == null || ""){
-                                text = "";
-                            } else{
-                                text = enter;
-                            }
-                        }
-                    </script>
-    
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-dense mdui-color-pink-a200" id="btn">緊急求救</button>
-                    <script>
-                        const btn = document.getElementById('btn');
-                        btn.addEventListener('click', function handleClick() {
-                            const initialText = '緊急求救';
-                            if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
-                                btn.textContent = '取消求救';
-                                alert('將開始錄影!\n若為誤觸，請再次點擊以取消!');
-                            } else {
-                                btn.textContent = initialText;
-                                alert('已取消!');
-                            }
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
+		<div class="mdui-tab mdui-color-theme mdui-color-black">
+			<!---<div>功能選單:</div>--->
+			<a href="javascript:;" class="mdui-typo-headline">個人資料</a>
+			<a href="javascript:;" class="mdui-typo-title"><i class="mdui-icon material-icons">&#xe853;</i>劉光明</a>
+			<div class="mdui-toolbar-spacer"></div>
+			<div style="margin-left: 0.5em;  margin-right: 0.5em;">
+				<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense"
+					onclick="showperinfo()">回首頁</button>
+				<script>
+					function showperinfo() {
+						window.location.href = "../control.html"
+					}
+				</script>
+
+				<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense"
+					mdui-dialog="{target: '#example-2'}">社工資料</button>
+				<div class="mdui-dialog" id="example-2">
+					<div class="mdui-dialog-title" style="font-size:2.5em ;font-weight: 500;">社工資料:</div>
+					<div class="mdui-dialog-content" style="font-size:1.5em; font-weight: 500;"><b>名稱:</b>鄧健康 <br>
+						<b>連絡電話:</b>0800-000-000<br>
+						<b>服務機構電話:</b>(00)0000-0000<br><br>
+						<b>服務時間:</b><br>
+						星期一 ~ 星期五 9:00 - 17:00<br>
+						星期六 9:00 - 12:00<br>
+						星期日 休假<br>
+					</div>
+					<div class="mdui-dialog-actions">
+						<button class="mdui-btn mdui-ripple mdui-color-pink-a200" mdui-dialog-close
+							style="font-size: 2em; font-weight: 500;">確定</button>
+					</div>
+				</div>
+
+				<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense"
+					mdui-dialog="{target: '#example-3'}">緊急連絡人資訊</button>
+				<div class="mdui-dialog" id="example-3">
+					<div class="mdui-dialog-title" style="font-size:2.5em ;font-weight: 500;">緊急連絡人資訊:</div>
+					<div class="mdui-dialog-content" style="font-size:1.5em; font-weight: 500;">緊急連絡人1:<br>
+						<b>名稱:</b>蘇雅琳 <br>
+						<b>連絡電話:</b>0000-010-000<br>
+						<b>關係:</b>孫媳婦<br><br>
+
+						緊急聯絡人2:<br>
+						<b>名稱:</b>劉忠義 <br>
+						<b>連絡電話:</b>0000-000-010<br>
+						<b>關係:</b>兒子<br><br>
+					</div>
+					<div class="mdui-dialog-actions">
+						<button class="mdui-btn mdui-ripple mdui-color-pink-a200" mdui-dialog-close
+							style="font-size: 2em; font-weight: 500;">確定</button>
+					</div>
+				</div>
+				<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense"
+					id="text">連繫社工</button>
+				<script>
+					const text = document.getElementById('text');
+					text.addEventListener('click', popout);
+					function popout(e) {
+						var enter = window.prompt('請輸入');
+						if (enter == null || "") {
+							text = "";
+						} else {
+							text = enter;
+						}
+					}
+				</script>
+
+				<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-dense mdui-color-pink-a200"
+					id="btn">緊急求救</button>
+				<script>
+					const btn = document.getElementById('btn');
+					btn.addEventListener('click', function handleClick() {
+						const initialText = '緊急求救';
+						if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+							btn.textContent = '取消求救';
+							alert('將開始錄影!\n若為誤觸，請再次點擊以取消!');
+						} else {
+							btn.textContent = initialText;
+							alert('已取消!');
+						}
+					});
+				</script>
+			</div>
+		</div>
+	</div>
 	<div class="mdui-panel" mdui-panel="{accordion: true}">
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header mdui-ripple"><strong>個人基本資料</strong></div>
-    <div class="mdui-panel-item-body">
-    	<table>
-    		<tr>
-				<td rowspan = "2">
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-ripple"><strong>個人基本資料</strong></div>
+			<div class="mdui-panel-item-body">
+				<table>
+					<tr>
+						<td rowspan="2">
 							<img src="elderly.png" width="90" height="120" alt="personal photo">
 							<br>
 						</td>
-						<td colspan ="2" >
-							<label><p>姓名:
-							<input name="name" type="text" size="25" maxlength="25" value="劉光明">
-							</p></label>
+						<td colspan="2">
+							<label>
+								<p>姓名:
+									<input name="name" type="text" size="25" maxlength="25" value="劉光明">
+								</p>
+							</label>
 							生理性別:
 							<input type="radio" name="gender" value="Male">Male
 							<input type="radio" name="gender" value="Female">Female
@@ -156,154 +121,199 @@
 						</td>
 					</tr>
 					<tr>
-						<td><div align="left">戶籍地:
-							<select name="Country">
-							<option value="Taipei" selected>台北</option>
-							<option value="Tainan">台南</option>
-							<option value="Taichung">台中</option>
-							<option value="Taoyuan">桃園</option>
-							</select></div></td>
-						<td><div align="left"><label for="birthday">生日:
-							<input type="date" id="birthday" name="birthday" value="1960-12-31">
-						</label></div></td>
+						<td>
+							<div align="left">戶籍地:
+								<select name="Country">
+									<option value="Taipei" selected>台北</option>
+									<option value="Tainan">台南</option>
+									<option value="Taichung">台中</option>
+									<option value="Taoyuan">桃園</option>
+								</select>
+							</div>
+						</td>
+						<td>
+							<div align="left"><label for="birthday">生日:
+									<input type="date" id="birthday" name="birthday" value="1960-12-31">
+								</label></div>
+						</td>
 					</tr>
 					<tr>
-						<td colspan="2"><div align="left"><label>住址:
-							<input type="text" name="E-mail" size="30" maxlength="100" placeholder="年長者住宅地址">
-						</label></div></td>
+						<td colspan="2">
+							<div align="left"><label>住址:
+									<input type="text" name="E-mail" size="30" maxlength="100" placeholder="年長者住宅地址">
+								</label></div>
+						</td>
 					</tr>
 					<tr>
-						<td colspan="2"><div align="left"><label>住宅電話:
-							<input type="text" name="E-mail" size="25" maxlength="100" value="(00)0000-0000">
-						</label><br>
-						<label>行動電話:
-							<input type="text" name="E-mail" size="25" maxlength="100" value="0000-000-000">
-						</label>
-					</div></td>
+						<td colspan="2">
+							<div align="left"><label>住宅電話:
+									<input type="text" name="E-mail" size="25" maxlength="100" value="(00)0000-0000">
+								</label><br>
+								<label>行動電話:
+									<input type="text" name="E-mail" size="25" maxlength="100" value="0000-000-000">
+								</label>
+							</div>
+						</td>
 					</tr>
 				</table>
-    </div>
-  </div>
-  <div class="mdui-panel-item">
-    <div class="mdui-panel-item-header mdui-ripple"><strong>緊急聯絡人</strong></div>
-    <div class="mdui-panel-item-body">
-      <table>
-      	<td colspan="2"><div align="left">
-      		<b>緊急聯絡人1:</b>
-			<label><p>姓名: 蘇雅琳</p></label>
-			<label><p>關係: 孫媳婦
-			</p></label>
-			<label><p>連絡電話: 0000-010-000
-			</p></label>
-			</div></td>
-		</table>
-		<br>
-		<table>
-			<td colspan="2"><div align="left">
-      		<b>緊急聯絡人2:</b>
-			<label><p>姓名: 劉忠義</p></label>
-			<label><p>關係: 父子
-			</p></label>
-			<label><p>連絡電話: 0000-000-010
-			</p></label>
-			</div></td>
-      </table>
-    </div>
-  </div>
-  <div class="mdui-panel-item">
-    <div class="mdui-panel-item-header mdui-ripple"><strong>個人疾病</strong></div>
-    <div class="mdui-panel-item-body">
-      <table>
-      	<tr>
-		<td><div align="left"><p>疾病</p></div></td>
-			<td colspan="2"><div class="disease"align="left">
-				<input type="checkbox" name="disease" value="diabetes" checked>糖尿病
-				<input type="checkbox" name="disease" value="hypertension">高血壓
-				<input type="checkbox" name="disease" value="Hyperlipidemia">高血脂
-				<input type="checkbox" name="disease" value="depression">抑鬱症
-				<input type="checkbox" name="disease" value="dementia" checked>認知障礙症
-				<input type="checkbox" name="disease" value="Osteoporosis">骨質酥鬆
-				<input type="checkbox" name="disease" value="CAD">冠狀動脈疾病
-				<input type="checkbox" name="disease" value="stroke">中風
-				<input type="checkbox" name="disease" value="other">其他:<input type="text" size="20" maxlength="30">
-				</div></td>
-			</tr>
-			<tr>
-			<td><div align="left"><p>家族潛在遺傳疾病:</p></div></td>
-			<td colspan="2"><div class="disease"align="left">
-				<input type="checkbox" name="disease" value="diabetes" checked>糖尿病
-				<input type="checkbox" name="disease" value="hypertension">高血壓
-				<input type="checkbox" name="disease" value="Hyperlipidemia" checked>高血脂
-				<input type="checkbox" name="disease" value="depression">抑鬱症
-				<input type="checkbox" name="disease" value="dementia" checked>認知障礙症
-				<input type="checkbox" name="disease" value="cancer" checked>癌症
-				<input type="checkbox" name="disease" value="other">其他:<input type="text" size="20" maxlength="30">
-				</div></td>
-			</tr>
-			<tr>
-		</table>
-    </div>
-
-  </div>
-  <div class="mdui-panel-item">
-    <div class="mdui-panel-item-header mdui-ripple"><strong>其他注意事項</strong></div>
-    <div class="mdui-panel-item-body">
-    	<tr><td><p>注意事項</p></td>
-			<td colspan="2"><div align="left">
-				<textarea rol="5" cols="50" maxlength="100" placeholder="Say something here."></textarea>
-				</div></td>
-			</tr> 
+			</div>
 		</div>
-  </div>
+		<div class="mdui-panel-item">
+			<div class="mdui-panel-item-header mdui-ripple"><strong>緊急聯絡人</strong></div>
+			<div class="mdui-panel-item-body">
+				<table>
+					<td colspan="2">
+						<div align="left">
+							<b>緊急聯絡人1:</b>
+							<label>
+								<p>姓名: 蘇雅琳</p>
+							</label>
+							<label>
+								<p>關係: 孫媳婦
+								</p>
+							</label>
+							<label>
+								<p>連絡電話: 0000-010-000
+								</p>
+							</label>
+						</div>
+					</td>
+				</table>
+				<br>
+				<table>
+					<td colspan="2">
+						<div align="left">
+							<b>緊急聯絡人2:</b>
+							<label>
+								<p>姓名: 劉忠義</p>
+							</label>
+							<label>
+								<p>關係: 父子
+								</p>
+							</label>
+							<label>
+								<p>連絡電話: 0000-000-010
+								</p>
+							</label>
+						</div>
+					</td>
+				</table>
+			</div>
+		</div>
+		<div class="mdui-panel-item">
+			<div class="mdui-panel-item-header mdui-ripple"><strong>個人疾病</strong></div>
+			<div class="mdui-panel-item-body">
+				<table>
+					<tr>
+						<td>
+							<div align="left">
+								<p>疾病</p>
+							</div>
+						</td>
+						<td colspan="2">
+							<div class="disease" align="left">
+								<input type="checkbox" name="disease" value="diabetes" checked>糖尿病
+								<input type="checkbox" name="disease" value="hypertension">高血壓
+								<input type="checkbox" name="disease" value="Hyperlipidemia">高血脂
+								<input type="checkbox" name="disease" value="depression">抑鬱症
+								<input type="checkbox" name="disease" value="dementia" checked>認知障礙症
+								<input type="checkbox" name="disease" value="Osteoporosis">骨質酥鬆
+								<input type="checkbox" name="disease" value="CAD">冠狀動脈疾病
+								<input type="checkbox" name="disease" value="stroke">中風
+								<input type="checkbox" name="disease" value="other">其他:<input type="text" size="20"
+									maxlength="30">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div align="left">
+								<p>家族潛在遺傳疾病:</p>
+							</div>
+						</td>
+						<td colspan="2">
+							<div class="disease" align="left">
+								<input type="checkbox" name="disease" value="diabetes" checked>糖尿病
+								<input type="checkbox" name="disease" value="hypertension">高血壓
+								<input type="checkbox" name="disease" value="Hyperlipidemia" checked>高血脂
+								<input type="checkbox" name="disease" value="depression">抑鬱症
+								<input type="checkbox" name="disease" value="dementia" checked>認知障礙症
+								<input type="checkbox" name="disease" value="cancer" checked>癌症
+								<input type="checkbox" name="disease" value="other">其他:<input type="text" size="20"
+									maxlength="30">
+							</div>
+						</td>
+					</tr>
+					<tr>
+				</table>
+			</div>
+
+		</div>
+		<div class="mdui-panel-item">
+			<div class="mdui-panel-item-header mdui-ripple"><strong>其他注意事項</strong></div>
+			<div class="mdui-panel-item-body">
+				<tr>
+					<td>
+						<p>注意事項</p>
+					</td>
+					<td colspan="2">
+						<div align="left">
+							<textarea rol="5" cols="50" maxlength="100" placeholder="Say something here."></textarea>
+						</div>
+					</td>
+				</tr>
+			</div>
+		</div>
 
 
-<div class="mdui-container">
-   <div class="mdui-fab-wrapper" id="fab" mdui-fab="{trigger: 'hover'}">
-      <button class="mdui-fab mdui-ripple mdui-color-pink-accent">
-        <i class="mdui-icon material-icons">&#xe853;</i>
-       <i class="mdui-icon mdui-fab-opened material-icons">&#xe7ff;</i>
-      </button>
+		<div class="mdui-container">
+			<div class="mdui-fab-wrapper" id="fab" mdui-fab="{trigger: 'hover'}">
+				<button class="mdui-fab mdui-ripple mdui-color-pink-accent">
+					<i class="mdui-icon material-icons">&#xe853;</i>
+					<i class="mdui-icon mdui-fab-opened material-icons">&#xe7ff;</i>
+				</button>
 
-  <div class="mdui-fab-dial">
-    <!-- 緊急求救 -->
-     <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" onclick="">
-      <i class="mdui-icon material-icons">&#xe887;</i>   </button>
-      <!-- 聯絡社工 -->
-    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink" id="text1">
-      <i class="mdui-icon material-icons">&#xe61c;</i>
-    </button>
-    <!-- 緊急聯絡人資料 -->
-    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" onclick="showdialog1()">
-      <i class="mdui-icon material-icons">&#xe7fb;</i>
-    </button>
-    <!-- 社工資料 -->
-    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange" onclick="showdialog()">
-      <i class="mdui-icon material-icons">&#xe55a;</i>
-    </button>
-    <!-- 回前頁 -->
-    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue" onclick="back()">
-      <i class="mdui-icon material-icons">&#xe15e;</i>   </button>
-      <script>
-      	function back(){
-             window.location.href ="../index.html"
-      	}
-      </script>
-  </div>
-</div>
- <script>
-        const text1 = document.getElementById('text1');
-        text1.addEventListener('click',popout);
-        function popout(e){
-            var enter = window.prompt('請輸入');
-            if(enter == null || ""){
-                text = "";
-            } else{
-                text = enter;
-            }
-        }
-  </script>
+				<div class="mdui-fab-dial">
+					<!-- 緊急求救 -->
+					<button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" onclick="">
+						<i class="mdui-icon material-icons">&#xe887;</i> </button>
+					<!-- 聯絡社工 -->
+					<button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink" id="text1">
+						<i class="mdui-icon material-icons">&#xe61c;</i>
+					</button>
+					<!-- 緊急聯絡人資料 -->
+					<button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" onclick="showdialog1()">
+						<i class="mdui-icon material-icons">&#xe7fb;</i>
+					</button>
+					<!-- 社工資料 -->
+					<button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange" onclick="showdialog()">
+						<i class="mdui-icon material-icons">&#xe55a;</i>
+					</button>
+					<!-- 回前頁 -->
+					<button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue" onclick="back()">
+						<i class="mdui-icon material-icons">&#xe15e;</i> </button>
+					<script>
+						function back() {
+							window.location.href = "../No.1.html"
+						}
+					</script>
+				</div>
+			</div>
+			<script>
+				const text1 = document.getElementById('text1');
+				text1.addEventListener('click', popout);
+				function popout(e) {
+					var enter = window.prompt('請輸入');
+					if (enter == null || "") {
+						text = "";
+					} else {
+						text = enter;
+					}
+				}
+			</script>
 
-</div>
+		</div>
 
 </body>
+
 </html>
