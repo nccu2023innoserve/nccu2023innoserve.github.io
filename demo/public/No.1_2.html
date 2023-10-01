@@ -128,7 +128,7 @@
                             <p><b><h1>攝影機擺放位置:</h1></b></p>
                             <div>
                                 <img src="cam_position.jpg" style="max-height: 250px; max-width: 750px;">
-                            </div>					
+                            </div>                  
                             <button onclick="closedialog()">關閉</button>
                     
                         </dialog>
@@ -140,14 +140,14 @@
                                     document.getElementById('cam_position').close();
                                 }
                             </script>
-                            <button class="button-6 mdui-color-indigo-50 mdui-color-pink-a200" onclick="video1()"><img src="camera.png" width="6%" height="6%">攝影機1</button>
+                            <button class="button-6 mdui-color-indigo-50" onclick="video1()"><img src="camera.png" width="6%" height="6%">攝影機1</button>
                             <script>
                                 function video1(){
                                     window.location.href ="No.1.html"
                         }
                             </script>
     
-                            <button class="button-7 mdui-color-indigo-50" onclick="video2()"><img src="camera.png" width="6%" height="6%">攝影機2</button>
+                            <button class="button-7 mdui-color-indigo-50 mdui-color-pink-a200" onclick="video2()"><img src="camera.png" width="6%" height="6%">攝影機2</button>
                             <script>
                                 function video2(){
                                     window.location.href ="No.1_2.html"
@@ -167,7 +167,7 @@
                         <div id="w-node-401-33c" class="layout-cell">
                                 <video controls height="
                                 100%" width="100%" autoplay loop muted>
-                                    <source src="fall1_silent_out.mp4" type="video/mp4" allowfullscreen="True">
+                                    <source src="fall2_silent_out.mp4" type="video/mp4" allowfullscreen="True">
                                     </video>
                         </div>
 
@@ -197,7 +197,7 @@
                         <div id="w-node-91-281" class="layout-cell cell-3" style="background-color: aliceblue;">
                             <div class="text-block-2">跌倒風險</div>
                         <div><canvas id="myChart" width="400" height="200"></canvas></div>
-						<script>
+                        <script>
                             var ctx = document.getElementById('myChart').getContext('2d');
 
                             var chartData = {
@@ -224,10 +224,10 @@
                                 type: 'line',
                                 data: chartData,
                                 options: chartOptions
-                            }); 	
-						</script>
+                            });     
+                        </script>
 
-					</div>
+                    </div>
                         <div id="w-node-91-285" class="layout-cell cell-4" style="background-color: aliceblue;">
                             <div class="text-block-3">跌倒累積次數(週)</div>
                             <div><canvas id="myChart_times" width="400" height="200"></canvas></div>
