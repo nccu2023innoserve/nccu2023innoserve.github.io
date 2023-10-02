@@ -3,18 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
-    integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
-    crossorigin="anonymous"
-    />
-    <script
-    src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
-    integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
-    crossorigin="anonymous"
-    ></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+        integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+        crossorigin="anonymous"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>耋不再跌再不迭</title>
@@ -28,167 +22,195 @@
 
 <body class="mdui-theme-layout-dark mdui-theme-accent-white">
     <div class="mdui-container-fluid">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
 
-    <div class="layout-blockcontainer1 container">
-                    <div class="mdui-appbar">
-            <div class="mdui-tab mdui-color-theme">
-                <a href="javascript:;" class="mdui-typo-headline" onclick="front()">CareResponse guardian</a>
-                <script>
-                    function front(){
-                        window.location.href="firstpage.html"
-                    }
-                </script>
-                <a href="elderly/No.1-XXX.html" class="mdui-typo-title"><i class="mdui-icon material-icons">&#xe853;</i>劉光明</a>
-                <div class="mdui-toolbar-spacer"></div>
-
-                <div style="margin-left: 0.5em; margin-right: 0.5em;">
-                <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" onclick="showperinfo()">個人資料</button>
+        <div class="layout-blockcontainer1 container">
+            <div class="mdui-appbar">
+                <div class="mdui-tab mdui-color-theme">
+                    <a href="javascript:;" class="mdui-typo-headline" onclick="front()">CareResponse guardian</a>
                     <script>
-                        function showperinfo(){
-                            window.location.href ="elderly/No.1-XXX.html"
+                        function front() {
+                            window.location.href = "index.html"
                         }
                     </script>
-                    
-                     <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" mdui-dialog="{target: '#example-2'}">社工資料</button>
-                    <div class="mdui-dialog" id="example-2">
-                      <div class="mdui-dialog-title" style="font-size:2.5em ;font-weight: 500;">社工資料:</div>
-                      <div class="mdui-dialog-content" style="font-size:1.5em; font-weight: 500;"><b>名稱:</b>鄧健康 <br>
-                        <b>連絡電話:</b>0800-000-000<br>
-                        <b>服務機構電話:</b>(00)0000-0000<br><br>
-                        <b>服務時間:</b><br>
-                         星期一 ~ 星期五 9:00 - 17:00<br>
-                         星期六 9:00 - 12:00<br>
-                         星期日 休假<br></div>
-                      <div class="mdui-dialog-actions">
-                        <button class="mdui-btn mdui-ripple mdui-color-pink-a200" mdui-dialog-close style="font-size: 2em; font-weight: 500;">確定</button>
-  </div>
-</div>
+                    <a href="elderly/No.1-XXX.html" class="mdui-typo-title"><i
+                            class="mdui-icon material-icons">&#xe853;</i>劉光明</a>
+                    <div class="mdui-toolbar-spacer"></div>
 
-        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" mdui-dialog="{target: '#example-3'}">緊急連絡人資訊</button>
-                    <div class="mdui-dialog" id="example-3">
-                      <div class="mdui-dialog-title" style="font-size:2.5em ;font-weight: 500;">緊急連絡人資訊:</div>
-                      <div class="mdui-dialog-content" style="font-size:1.5em; font-weight: 500;">緊急連絡人1:<br>
-                        <b>名稱:</b>蘇雅琳 <br>
-                        <b>連絡電話:</b>0000-010-000<br>
-                        <b>關係:</b>孫媳婦<br><br>
-
-                        緊急聯絡人2:<br>
-                        <b>名稱:</b>劉忠義 <br>
-                        <b>連絡電話:</b>0000-000-010<br>
-                        <b>關係:</b>兒子<br><br></div>
-                      <div class="mdui-dialog-actions">
-                        <button class="mdui-btn mdui-ripple mdui-color-pink-a200" mdui-dialog-close style="font-size: 2em; font-weight: 500;">確定</button>
-  </div>
-</div>
-
-
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense" id="text">連繫社工</button>
-                    <script>
-                        const text = document.getElementById('text');
-                        text.addEventListener('click',popout);
-                        function popout(e){
-                            var enter = window.prompt('請輸入');
-                            if(enter == null || ""){
-                                text = "";
-                            } else{
-                                text = enter;
+                    <div style="margin-left: 0.5em; margin-right: 0.5em;">
+                        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense"
+                            onclick="showperinfo()">個人資料</button>
+                        <script>
+                            function showperinfo() {
+                                window.location.href = "elderly/No.1-XXX.html"
                             }
-                        }
-                    </script>
+                        </script>
 
-                    <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-color-pink-a200" mdui-dialog="{target: '#example-1'}">緊急求救</button>
-                    <div class="mdui-dialog" id="example-1">
-                      <div class="mdui-dialog-title" style="font-size:2.5em ;font-weight: 500;">緊急求救中!</div>
-                      <div class="mdui-dialog-content" style="font-size:1.5em; font-weight: 500;">將開始錄影!若為誤觸，請再次點擊以取消!</div>
-                      <div class="mdui-dialog-actions">
-                        <button class="mdui-btn mdui-ripple mdui-color-pink-a200" mdui-dialog-close style="font-size: 2em; font-weight: 500;">取消求救</button>
-  </div>
-</div>
-                    
-                </nav>
+                        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense"
+                            mdui-dialog="{target: '#example-2'}">社工資料</button>
+                        <div class="mdui-dialog" id="example-2">
+                            <div class="mdui-dialog-title" style="font-size:2.5em ;font-weight: 500;">社工資料:</div>
+                            <div class="mdui-dialog-content" style="font-size:1.5em; font-weight: 500;"><b>名稱:</b>鄧健康
+                                <br>
+                                <b>連絡電話:</b>0800-000-000<br>
+                                <b>服務機構電話:</b>(00)0000-0000<br><br>
+                                <b>服務時間:</b><br>
+                                星期一 ~ 星期五 9:00 - 17:00<br>
+                                星期六 9:00 - 12:00<br>
+                                星期日 休假<br>
+                            </div>
+                            <div class="mdui-dialog-actions">
+                                <button class="mdui-btn mdui-ripple mdui-color-pink-a200" mdui-dialog-close
+                                    style="font-size: 2em; font-weight: 500;">確定</button>
+                            </div>
+                        </div>
 
-            </div></div>
-        </div>
+                        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense"
+                            mdui-dialog="{target: '#example-3'}">緊急連絡人資訊</button>
+                        <div class="mdui-dialog" id="example-3">
+                            <div class="mdui-dialog-title" style="font-size:2.5em ;font-weight: 500;">緊急連絡人資訊:</div>
+                            <div class="mdui-dialog-content" style="font-size:1.5em; font-weight: 500;">緊急連絡人1:<br>
+                                <b>名稱:</b>蘇雅琳 <br>
+                                <b>連絡電話:</b>0000-010-000<br>
+                                <b>關係:</b>孫媳婦<br><br>
 
-        <!-- <div class="layout-blockcontainer"> -->
-            <div class="mdui-row-xs-3 mdui-row-sm-4 mdui-row-md-5 mdui-row-lg-6 mdui-row-xl-7 mdui-grid-list" >
+                                緊急聯絡人2:<br>
+                                <b>名稱:</b>劉忠義 <br>
+                                <b>連絡電話:</b>0000-000-010<br>
+                                <b>關係:</b>兒子<br><br>
+                            </div>
+                            <div class="mdui-dialog-actions">
+                                <button class="mdui-btn mdui-ripple mdui-color-pink-a200" mdui-dialog-close
+                                    style="font-size: 2em; font-weight: 500;">確定</button>
+                            </div>
+                        </div>
+
+
+                        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-grey mdui-btn-dense"
+                            id="text">連繫社工</button>
+                        <script>
+                            const text = document.getElementById('text');
+                            text.addEventListener('click', popout);
+                            function popout(e) {
+                                var enter = window.prompt('請輸入');
+                                if (enter == null || "") {
+                                    text = "";
+                                } else {
+                                    text = enter;
+                                }
+                            }
+                        </script>
+
+                        <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-color-pink-a200"
+                            mdui-dialog="{target: '#example-1'}">緊急求救</button>
+                        <div class="mdui-dialog" id="example-1">
+                            <div class="mdui-dialog-title" style="font-size:2.5em ;font-weight: 500;">緊急求救中!</div>
+                            <div class="mdui-dialog-content" style="font-size:1.5em; font-weight: 500;">
+                                將開始錄影!若為誤觸，請再次點擊以取消!</div>
+                            <div class="mdui-dialog-actions">
+                                <button class="mdui-btn mdui-ripple mdui-color-pink-a200" mdui-dialog-close
+                                    style="font-size: 2em; font-weight: 500;">取消求救</button>
+                            </div>
+                        </div>
+
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="layout-blockcontainer"> -->
+            <div class="mdui-row-xs-3 mdui-row-sm-4 mdui-row-md-5 mdui-row-lg-6 mdui-row-xl-7 mdui-grid-list">
 
                 <div class="text-block">識別結果</div>
-                    <div id="mdui-grid w-node-401-338 mdui-col" class="layout-layout quick-stack layout-layout">
-                        <div id="w-node-401-339" class="layout-cell cell" style="border: none;">
-                            <div class="mdui-color-grey-700 " style="border-radius: 2px 2px 2px 2px; border:3px double #F5F5F5; height: auto;">
+                <div id="mdui-grid w-node-401-338 mdui-col" class="layout-layout quick-stack layout-layout">
+                    <div id="w-node-401-339" class="layout-cell cell" style="border: none;">
+                        <div class="mdui-color-grey-700 "
+                            style="border-radius: 2px 2px 2px 2px; border:3px double #F5F5F5; height: auto;">
                             <div><strong>攝影機選擇: </strong>
-                                <button class="mdui-btn mdui-btn-raised mdui-color-grey-300 mdui-btn-dense" onclick="showcam()" style="margin-bottom: 0.25em;margin-top: 0.25em; padding: auto;">
+                                <button class="mdui-btn mdui-btn-raised mdui-color-grey-300 mdui-btn-dense"
+                                    onclick="showcam()"
+                                    style="margin-bottom: 0.25em;margin-top: 0.25em; padding: auto;">
                                     <u>攝影機位置</u></button>
-                                    </div>
+                            </div>
                             <dialog id="cam_position">
-                            <p><b><h1>攝影機擺放位置:</h1></b></p>
-                            <div>
-                                <img src="cam_position.jpg" style="max-height: 250px; max-width: 750px;">
-                            </div>                  
-                            <button onclick="closedialog()">關閉</button>
-                    
-                        </dialog>
+                                <p><b>
+                                        <h1>攝影機擺放位置:</h1>
+                                    </b></p>
+                                <div>
+                                    <img src="cam_position.jpg" style="max-height: 250px; max-width: 750px;">
+                                </div>
+                                <button onclick="closedialog()">關閉</button>
+
+                            </dialog>
                             <script>
-                                function showcam(){
+                                function showcam() {
                                     var dia_cam = document.getElementById('cam_position').showModal();
                                 }
-                                function closedialog(){
+                                function closedialog() {
                                     document.getElementById('cam_position').close();
                                 }
                             </script>
-                            <button class="button-6 mdui-color-indigo-50" onclick="video1()"><img src="camera.png" width="6%" height="6%">攝影機1</button>
+                            <button class="button-6 mdui-color-indigo-50" onclick="video1()"><img src="camera.png"
+                                    width="6%" height="6%">攝影機1</button>
                             <script>
-                                function video1(){
-                                    window.location.href ="No.1.html"
-                        }
-                            </script>
-    
-                            <button class="button-7 mdui-color-indigo-50" onclick="video2()"><img src="camera.png" width="6%" height="6%">攝影機2</button>
-                            <script>
-                                function video2(){
-                                    window.location.href ="No.1_2.html"
+                                function video1() {
+                                    window.location.href = "No.1.html"
                                 }
                             </script>
-    
-                            <button class="button-8 mdui-color-indigo-50 mdui-color-pink-a200" onclick="video3()"><img src="camera.png" width="6%" height="6%">攝影機3</button>
+
+                            <button class="button-7 mdui-color-indigo-50" onclick="video2()"><img src="camera.png"
+                                    width="6%" height="6%">攝影機2</button>
                             <script>
-                                function video3(){
-                                    window.location.href ="No.1_3.html"
+                                function video2() {
+                                    window.location.href = "No.1_2.html"
+                                }
+                            </script>
+
+                            <button class="button-8 mdui-color-indigo-50 mdui-color-pink-a200" onclick="video3()"><img
+                                    src="camera.png" width="6%" height="6%">攝影機3</button>
+                            <script>
+                                function video3() {
+                                    window.location.href = "No.1_3.html"
                                 }
                             </script>
                             <!-- <div class="mdui-divider-inset-dark"></div> -->
                         </div>
                     </div>
 
-                        <div id="w-node-401-33c" class="layout-cell">
-                                <video controls height="
+                    <div id="w-node-401-33c" class="layout-cell">
+                        <video controls height="
                                 100%" width="100%" autoplay loop muted>
-                                    <source src="fall3_silent_out.mp4" type="video/mp4" allowfullscreen="True">
-                                    </video>
-                        </div>
+                            <source src="fall3_silent_out.mp4" type="video/mp4" allowfullscreen="True">
+                        </video>
+                    </div>
 
-                        <div id="w-node-401-33e" class="mdui-grid layout-cell cell" style="border: none;">
+                    <div id="w-node-401-33e" class="mdui-grid layout-cell cell" style="border: none;">
 
-                            <div class="mdui-color-grey-700" style="border-radius: 2px 2px 2px 2px;border:3px double #F5F5F5;">
+                        <div class="mdui-color-grey-700"
+                            style="border-radius: 2px 2px 2px 2px;border:3px double #F5F5F5;">
                             <div><strong> 系統日誌
-                            </strong><button class="mdui-btn mdui-color-blue-grey"style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
-                            <b>2023-09-21_09:21 _Fall_Warning_</b></button>
-                            <button class="mdui-btn mdui-color-blue-grey" style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
-                            <b>2023-09-08_11:44 _Fall_Warning_</b></button>
-                            <button class="mdui-btn mdui-color-blue-grey" style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
-                            <b>2023-09-02_14:44 _Fall_Warning_</b></button>
-                            <button class="mdui-btn mdui-color-blue-grey" style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
-                            <b>2023-08-26_18:28 _Fall_Warning_</b></button>
+                                </strong><button class="mdui-btn mdui-color-blue-grey"
+                                    style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
+                                    <b>2023-09-21_09:21 _Fall_Warning_</b></button>
+                                <button class="mdui-btn mdui-color-blue-grey"
+                                    style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
+                                    <b>2023-09-08_11:44 _Fall_Warning_</b></button>
+                                <button class="mdui-btn mdui-color-blue-grey"
+                                    style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
+                                    <b>2023-09-02_14:44 _Fall_Warning_</b></button>
+                                <button class="mdui-btn mdui-color-blue-grey"
+                                    style="color: #f58142; text-align: left; margin-top: 0.1em; margin-bottom:0.1em">
+                                    <b>2023-08-26_18:28 _Fall_Warning_</b></button>
+                            </div>
                         </div>
-</div>
 
-                        </div>
-                    </div></div>
-             
+                    </div>
+                </div>
+            </div>
+
             <!-- <div class="layout-blockcontainer container"> -->
             <div>
                 <div class="text-block-5">圖表<br></div>
@@ -196,115 +218,118 @@
                     <div id="w-node-91-280" class="layout-layout quick-stack-2 layout-layout">
                         <div id="w-node-91-281" class="layout-cell cell-3" style="background-color: aliceblue;">
                             <div class="text-block-2">跌倒風險</div>
-                        <div><canvas id="myChart" width="400" height="200"></canvas></div>
-                        <script>
-                            var ctx = document.getElementById('myChart').getContext('2d');
+                            <div><canvas id="myChart" width="400" height="200"></canvas></div>
+                            <script>
+                                var ctx = document.getElementById('myChart').getContext('2d');
 
-                            var chartData = {
-                                labels: ['08', '10', '12', '14', '16','18','20','22'],
-                                datasets: [{
-                                    label: '跌倒風險(%)',
-                                    data: [82,27 ,95,64, 57,
-                                        63,
-                                        79,
-                                        24],
-                                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                                    borderColor: 'rgba(75, 192, 192, 1)',
-                                    borderWidth: 1
-                                }]
-                            };
-                        
-                            var chartOptions = {
-                                responsive: true,
-                                maintainAspectRatio: false
-                            };
-                        
-                            // Create the chart
-                            var myChart = new Chart(ctx, {
-                                type: 'line',
-                                data: chartData,
-                                options: chartOptions
-                            });     
-                        </script>
+                                var chartData = {
+                                    labels: ['08', '10', '12', '14', '16', '18', '20', '22'],
+                                    datasets: [{
+                                        label: '跌倒風險(%)',
+                                        data: [82, 27, 95, 64, 57,
+                                            63,
+                                            79,
+                                            24],
+                                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                        borderColor: 'rgba(75, 192, 192, 1)',
+                                        borderWidth: 1
+                                    }]
+                                };
 
-                    </div>
+                                var chartOptions = {
+                                    responsive: true,
+                                    maintainAspectRatio: false
+                                };
+
+                                // Create the chart
+                                var myChart = new Chart(ctx, {
+                                    type: 'line',
+                                    data: chartData,
+                                    options: chartOptions
+                                });     
+                            </script>
+
+                        </div>
                         <div id="w-node-91-285" class="layout-cell cell-4" style="background-color: aliceblue;">
                             <div class="text-block-3">跌倒累積次數(週)</div>
                             <div><canvas id="myChart_times" width="400" height="200"></canvas></div>
-                          <script>
-                            var ctx1 = document.getElementById('myChart_times').getContext('2d');
+                            <script>
+                                var ctx1 = document.getElementById('myChart_times').getContext('2d');
 
-                            var chartData1 = {
-                                labels: ['一', '二', '三', '四', '五', '六', '日'],
-                                datasets: [{
-                                    label: '累計次數',
-                                    data: [1, 2, 4, 5, 5, 5, 6],
-                                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                                    borderColor: 'rgba(75, 192, 192, 1)',
-                                    borderWidth: 1
-                                }]
-                            };
+                                var chartData1 = {
+                                    labels: ['一', '二', '三', '四', '五', '六', '日'],
+                                    datasets: [{
+                                        label: '累計次數',
+                                        data: [1, 2, 4, 5, 5, 5, 6],
+                                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                        borderColor: 'rgba(75, 192, 192, 1)',
+                                        borderWidth: 1
+                                    }]
+                                };
 
-                            var chartOptions1 = {
-                                responsive: true,
-                                maintainAspectRatio: false
-                            };
+                                var chartOptions1 = {
+                                    responsive: true,
+                                    maintainAspectRatio: false
+                                };
 
-                            // Create the chart with corrected data and options
-                            var myChart_times = new Chart(ctx1, {
-                                type: 'bar',
-                                data: chartData1, // Corrected variable name
-                                options: chartOptions1, // Corrected variable name
-                            });
-    </script>
+                                // Create the chart with corrected data and options
+                                var myChart_times = new Chart(ctx1, {
+                                    type: 'bar',
+                                    data: chartData1, // Corrected variable name
+                                    options: chartOptions1, // Corrected variable name
+                                });
+                            </script>
 
-<div class="mdui-container">
+                            <div class="mdui-container">
 
-   <div class="mdui-fab-wrapper" id="fab" mdui-fab="{trigger: 'hover'}">
-      <button class="mdui-fab mdui-ripple mdui-color-pink-accent">
-        <i class="mdui-icon material-icons">&#xe853;</i>
-       <i class="mdui-icon mdui-fab-opened material-icons">&#xe7ff;</i>
-      </button>
+                                <div class="mdui-fab-wrapper" id="fab" mdui-fab="{trigger: 'hover'}">
+                                    <button class="mdui-fab mdui-ripple mdui-color-pink-accent">
+                                        <i class="mdui-icon material-icons">&#xe853;</i>
+                                        <i class="mdui-icon mdui-fab-opened material-icons">&#xe7ff;</i>
+                                    </button>
 
-  <div class="mdui-fab-dial">
-    <!-- 緊急求救 -->
-     <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" onclick="">
-      <i class="mdui-icon material-icons">&#xe887;</i>   </button>
-      <!-- 聯絡社工 -->
-    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink" id="text2">
-      <i class="mdui-icon material-icons">&#xe61c;</i>
-    </button>
-    <!-- 緊急聯絡人資料 -->
-    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" onclick="showdialog1()">
-      <i class="mdui-icon material-icons">&#xe7fb;</i>
-    </button>
-    <!-- 社工資料 -->
-    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange" onclick="showdialog()">
-      <i class="mdui-icon material-icons">&#xe55a;</i>
-    </button>
-    <!-- 個人資料 -->
-    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue" onclick="showperinfo()">
-      <i class="mdui-icon material-icons">&#xe853;</i>    </button>
-  </div>
-</div>
- <script>
-        const text2 = document.getElementById('text2');
-        text2.addEventListener('click',popout);
-        function popout(e){
-            var enter = window.prompt('請輸入');
-            if(enter == null || ""){
-                text = "";
-            } else{
-                text = enter;
-            }
-        }
-  </script>
+                                    <div class="mdui-fab-dial">
+                                        <!-- 緊急求救 -->
+                                        <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" onclick="">
+                                            <i class="mdui-icon material-icons">&#xe887;</i> </button>
+                                        <!-- 聯絡社工 -->
+                                        <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink" id="text2">
+                                            <i class="mdui-icon material-icons">&#xe61c;</i>
+                                        </button>
+                                        <!-- 緊急聯絡人資料 -->
+                                        <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red"
+                                            onclick="showdialog1()">
+                                            <i class="mdui-icon material-icons">&#xe7fb;</i>
+                                        </button>
+                                        <!-- 社工資料 -->
+                                        <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange"
+                                            onclick="showdialog()">
+                                            <i class="mdui-icon material-icons">&#xe55a;</i>
+                                        </button>
+                                        <!-- 個人資料 -->
+                                        <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue"
+                                            onclick="showperinfo()">
+                                            <i class="mdui-icon material-icons">&#xe853;</i> </button>
+                                    </div>
+                                </div>
+                                <script>
+                                    const text2 = document.getElementById('text2');
+                                    text2.addEventListener('click', popout);
+                                    function popout(e) {
+                                        var enter = window.prompt('請輸入');
+                                        if (enter == null || "") {
+                                            text = "";
+                                        } else {
+                                            text = enter;
+                                        }
+                                    }
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
